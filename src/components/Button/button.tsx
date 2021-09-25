@@ -21,10 +21,10 @@ interface BaseButtonProps {
     href?: string;
 }
 
-type NativeButtonProps = BaseButtonProps&React.BaseHTMLAttributes<HTMLElement>
+type NativeButtonProps = BaseButtonProps & React.BaseHTMLAttributes<HTMLElement>
 
 const Button: React.FC<NativeButtonProps> = (props) => {
-    const { children, disabled, className, href, size, btnType, ...restProps } = props;
+    const {children, disabled, className, href, size, btnType, ...restProps} = props;
     const classes = classNames('devops-btn', className, {
         [`devops-btn-${btnType}`]: btnType,
         [`devops-btn-${size}`]: size,
