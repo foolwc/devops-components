@@ -19,7 +19,6 @@ import React from 'react';
 import { Kanban } from 'devops-components';
 
 import "devops-components/build/index.css";
-import { Kanban } from "devops-components";
 
 const records = [
     {
