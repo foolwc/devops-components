@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/devops-components/static/css/main.b323384c.chunk.css",
-    "main.js": "/devops-components/static/js/main.b8fde23b.chunk.js",
-    "main.js.map": "/devops-components/static/js/main.b8fde23b.chunk.js.map",
+    "main.js": "/devops-components/static/js/main.1632770e.chunk.js",
+    "main.js.map": "/devops-components/static/js/main.1632770e.chunk.js.map",
     "runtime-main.js": "/devops-components/static/js/runtime-main.bbd47df2.js",
     "runtime-main.js.map": "/devops-components/static/js/runtime-main.bbd47df2.js.map",
     "static/js/2.1396de87.chunk.js": "/devops-components/static/js/2.1396de87.chunk.js",
@@ -11,12 +11,17 @@
     "static/js/3.c5aebd22.chunk.js.map": "/devops-components/static/js/3.c5aebd22.chunk.js.map",
     "index.html": "/devops-components/index.html",
     "static/css/main.b323384c.chunk.css.map": "/devops-components/static/css/main.b323384c.chunk.css.map",
-    "static/js/2.1396de87.chunk.js.LICENSE.txt": "/devops-components/static/js/2.1396de87.chunk.js.LICENSE.txt"
+    "static/js/2.1396de87.chunk.js.LICENSE.txt": "/devops-components/static/js/2.1396de87.chunk.js.LICENSE.txt",
+    "static/media/bug.6124012a.svg": "/devops-components/static/media/bug.6124012a.svg",
+    "static/media/emergency.c4d66385.svg": "/devops-components/static/media/emergency.c4d66385.svg",
+    "static/media/high.1a2b660d.svg": "/devops-components/static/media/high.1a2b660d.svg",
+    "static/media/low.3a41ebe1.svg": "/devops-components/static/media/low.3a41ebe1.svg",
+    "static/media/middle.a1dafc38.svg": "/devops-components/static/media/middle.a1dafc38.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.bbd47df2.js",
     "static/js/2.1396de87.chunk.js",
     "static/css/main.b323384c.chunk.css",
-    "static/js/main.b8fde23b.chunk.js"
+    "static/js/main.1632770e.chunk.js"
   ]
 }
