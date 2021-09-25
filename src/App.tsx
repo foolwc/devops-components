@@ -1,26 +1,34 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import Button, { ButtonSize, ButtonType } from "./components/Button/button";
+import './styles/index.scss'
+import './App.css'
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+        <>
+            <div>
+                <Button btnType={ButtonType.Primary} onClick={()=> {alert()}}> 注 册 </Button>
+                <Button btnType={ButtonType.Default}> 登 录 </Button>
+                <Button btnType={ButtonType.Default} disabled> 登 录(disabled) </Button>
+                <Button btnType={ButtonType.Danger}> 删 除 </Button>
+                <Button btnType={ButtonType.Danger} disabled> 删 除 </Button>
+            </div>
+            <div>
+                <Button size={ButtonSize.Small} btnType={ButtonType.Primary}> 注 册 </Button>
+                <Button size={ButtonSize.Small} btnType={ButtonType.Default}> 登 录 </Button>
+                <Button size={ButtonSize.Small} btnType={ButtonType.Default} disabled> 登 录(disabled) </Button>
+                <Button size={ButtonSize.Small} btnType={ButtonType.Danger}> 删 除 </Button>
+                <Button size={ButtonSize.Small} btnType={ButtonType.Danger} disabled> 删 除 </Button>
+            </div>
+            <div>
+                <Button size={ButtonSize.Large} btnType={ButtonType.Primary}> 注 册 </Button>
+                <Button size={ButtonSize.Large} btnType={ButtonType.Default}> 登 录 </Button>
+                <Button size={ButtonSize.Large} btnType={ButtonType.Default} disabled> 登 录(disabled) </Button>
+                <Button size={ButtonSize.Large} btnType={ButtonType.Danger}> 删 除 </Button>
+                <Button size={ButtonSize.Large} btnType={ButtonType.Danger} disabled> 删 除 </Button>
+            </div>
+        </>
+    );
 }
 
 export default App;
