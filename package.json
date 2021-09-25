@@ -1,7 +1,23 @@
 {
   "name": "devops-components",
   "version": "0.1.3",
-  "private": true,
+  "description": "DevOps Components in Coding",
+  "private": false,
+  "author": "foolwc",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://foolwc.github.io/devops-components"
+  },
+  "files": [
+    "build"
+  ],
+  "keywords": [
+    "React",
+    "DevOps",
+    "Kanban",
+    "Gantt"
+  ],
   "homepage": "https://foolwc.github.io/devops-components",
   "main": "build/index.js",
   "module": "build/index.js",

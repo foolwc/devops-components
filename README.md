@@ -1,46 +1,106 @@
-# Getting Started with Create React App
+# DevOps Components for React
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+[![npm](https://img.shields.io/npm/v/devops-components.svg)](https://www.npmjs.com/package/devops-components)
+[![npm](https://img.shields.io/npm/dt/devops-components.svg)](https://www.npmjs.com/package/devops-components)
+[![npm](https://img.shields.io/npm/l/devops-components.svg)](https://www.npmjs.com/package/devops-components)
+# 1. Install
 
-## Available Scripts
+```sh
+npm install --save devops-components
+```
+# 2. Usage
 
-In the project directory, you can run:
+## 2.1 Kanban
 
-### `yarn start`
+Online demo see [https://foolwc.github.io/devops-components/](https://foolwc.github.io/devops-components/).
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+```jsx
+import React from 'react';
+import { Kanban } from 'devops-components';
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+import "devops-components/build/index.css";
+import { Kanban } from "devops-components";
 
-### `yarn test`
+const records = [
+    {
+        id: 1,
+        title: "test",
+        status: "done",
+        priority: "emergency",
+        issueType: "shishi",
+        deadline: "2021年9月10日"
+    },
+    {
+        id: 2,
+        title: "[示例任务]-增加邮件邀请成员弹窗并完成邀请成员交互功能",
+        status: "notStarted",
+        priority: "high",
+        issueType: "renwu",
+        deadline: "2021年9月10日"
+    },
+    {
+        id: 3,
+        title: "[示例需求]-通过访问邀请链接可注册成为团队成员",
+        status: "notStarted",
+        priority: "middle",
+        issueType: "shishi",
+        deadline: "2021年9月10日"
+    },
+    {
+        id: 4,
+        title: "需求2",
+        status: "test",
+        priority: "emergency",
+        issueType: "bug",
+        deadline: "2021年9月10日"
+    },
+    {
+        id: 5,
+        title: "需求2",
+        status: "dev",
+        priority: "low",
+        issueType: "xuqiu",
+        deadline: "2021年9月10日"
+    },
+    {
+        id: 6,
+        title: "需求2",
+        status: "dev",
+        priority: "high",
+        issueType: "bug",
+        deadline: "2021年9月10日"
+    },
+    {
+        id: 7,
+        title: "需求2",
+        status: "notStarted",
+        priority: "middle",
+        issueType: "xuqiu",
+        deadline: "2021年9月10日"
+    }
+];
+export default function App() {
+    return (
+        <div className="App">
+            <Kanban records={records} />
+        </div>
+    );
+}
+```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Or you can see the code on  [codesandbox](https://codesandbox.io/s/kanban-wob5z?file=/src/App.js:23-1244).
 
-### `yarn build`
+## 2.2. Kanban props
+- **`records`** (required, array)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- **`height`** (optional, string)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- **`onIssueDragEnd`** (optional, func)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- **`onIssueClick`** (optional, func)
 
-### `yarn eject`
+# 3. Screenshot
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+# 4. LICENSE
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+MIT @[foolwc](https://github.com/foolwc)
