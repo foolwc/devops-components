@@ -1,16 +1,9 @@
 import React from 'react'
 import classNames from 'classnames'
 
-export enum ButtonSize {
-    Large = 'lg',
-    Small = 'sm'
-}
+type ButtonType = 'primary'|'default'|'danger'
+type ButtonSize = 'lg'|'sm'|'default'
 
-export enum ButtonType {
-    Primary = 'primary',
-    Default = 'default',
-    Danger = 'danger',
-}
 
 interface BaseButtonProps {
     className?: string;
@@ -43,8 +36,9 @@ const Button: React.FC<NativeButtonProps> = (props) => {
 }
 
 Button.defaultProps = {
+    btnType: 'default',
+    size: 'default',
     disabled: false,
-    btnType: ButtonType.Default
 }
 
 export default Button

@@ -33,13 +33,14 @@
   "scripts": {
     "clean": "rimraf build",
     "start": "react-scripts start",
-    "build": "npm run clean && npm run build-ts && npm run build-scss",
+    "build": "npm run clean && npm run build-ts && npm run build-css",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "react-scripts build",
     "deploy": "gh-pages -d build",
     "build-ts": "tsc -p tsconfig.build.json",
-    "build-scss": "node-sass ./src/styles/index.scss ./build/index.css"
+    "prepublish": "npm run build",
+    "build-css": "node-sass ./src/styles/index.scss ./build/index.css"
   },
   "eslintConfig": {
     "extends": [

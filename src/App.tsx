@@ -1,5 +1,5 @@
 import React from 'react';
-import Button, { ButtonSize, ButtonType } from "./components/Button/button";
+import Button from "./components/Button/button";
 import './styles/index.scss'
 import './App.css'
 import Kanban from "./components/Kanban/kanban";
@@ -10,25 +10,25 @@ function App() {
         <>
             <div>
                 <h2>Button组件</h2>
-                <Button btnType={ButtonType.Primary}> 注 册 </Button>
-                <Button btnType={ButtonType.Default}> 登 录 </Button>
-                <Button btnType={ButtonType.Default} disabled> 登 录(disabled) </Button>
-                <Button btnType={ButtonType.Danger}> 删 除 </Button>
-                <Button btnType={ButtonType.Danger} disabled> 删 除 </Button>
+                <Button btnType={'default'}> 注 册 </Button>
+                <Button btnType={'default'}> 登 录 </Button>
+                <Button btnType={'default'} disabled> 登 录(disabled) </Button>
+                <Button btnType={'default'}> 删 除 </Button>
+                <Button btnType={'default'} disabled> 删 除 </Button>
             </div>
             <div>
-                <Button size={ButtonSize.Small} btnType={ButtonType.Primary}> 注 册 </Button>
-                <Button size={ButtonSize.Small} btnType={ButtonType.Default}> 登 录 </Button>
-                <Button size={ButtonSize.Small} btnType={ButtonType.Default} disabled> 登 录(disabled) </Button>
-                <Button size={ButtonSize.Small} btnType={ButtonType.Danger}> 删 除 </Button>
-                <Button size={ButtonSize.Small} btnType={ButtonType.Danger} disabled> 删 除 </Button>
+                <Button size={'sm'} btnType={'primary'}> 注 册 </Button>
+                <Button size={'sm'} btnType={'default'}> 登 录 </Button>
+                <Button size={'sm'} btnType={'default'} disabled> 登 录(disabled) </Button>
+                <Button size={'sm'} btnType={'danger'}> 删 除 </Button>
+                <Button size={'sm'} btnType={'danger'} disabled> 删 除 </Button>
             </div>
             <div>
-                <Button size={ButtonSize.Large} btnType={ButtonType.Primary}> 注 册 </Button>
-                <Button size={ButtonSize.Large} btnType={ButtonType.Default}> 登 录 </Button>
-                <Button size={ButtonSize.Large} btnType={ButtonType.Default} disabled> 登 录(disabled) </Button>
-                <Button size={ButtonSize.Large} btnType={ButtonType.Danger}> 删 除 </Button>
-                <Button size={ButtonSize.Large} btnType={ButtonType.Danger} disabled> 删 除 </Button>
+                <Button size={'lg'} btnType={'primary'}> 注 册 </Button>
+                <Button size={'lg'} btnType={'default'}> 登 录 </Button>
+                <Button size={'lg'} btnType={'default'} disabled> 登 录(disabled) </Button>
+                <Button size={'lg'} btnType={'danger'}> 删 除 </Button>
+                <Button size={'lg'} btnType={'danger'} disabled> 删 除 </Button>
             </div>
             <div>
                 <h2>看板组件</h2>
